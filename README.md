@@ -1,6 +1,6 @@
 # AI新闻聚合器
 
-[![Python Application](https://github.com/你的用户名/ai-news-aggregator/actions/workflows/python-app.yml/badge.svg)](https://github.com/你的用户名/ai-news-aggregator/actions/workflows/python-app.yml)
+[![Python Application](https://github.com/UEG95/ai-news-aggregator/actions/workflows/python-app.yml/badge.svg)](https://github.com/UEG95/ai-news-aggregator/actions/workflows/python-app.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 
