@@ -4,16 +4,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 
-一个使用Python开发的AI新闻聚合器，支持多个新闻源的实时新闻获取和过滤。
+一个基于Python的AI新闻聚合器，支持多个新闻源的AI相关新闻获取和展示。
 
 ## 功能特点
 
-- 多新闻源支持（新浪科技、36氪）
-- 现代化GUI界面（使用arc主题）
-- 实时新闻搜索过滤
-- 可点击的新闻链接
-- 代理设置支持
-- 新闻来源和时间显示
+- 多新闻源支持：
+  - 必应新闻
+  - Google新闻
+  - 新浪科技
+  - 36氪
+  - 量子位
+- 美观的图形用户界面
+- 支持代理设置
+- 新闻预览和详细阅读
+- 自动刷新功能
+- 详细的错误日志记录
 
 ## 界面预览
 
@@ -29,20 +34,15 @@
 
 ## 安装要求
 
-- Python 3.6+
-- 依赖包：
-  ```
-  requests>=2.31.0
-  beautifulsoup4>=4.12.0
-  lxml>=4.9.0
-  ttkthemes>=3.2.2
-  ```
+- Python 3.7+
+- tkinter (通常随Python一起安装)
+- 其他依赖项见 `requirements.txt`
 
 ## 安装步骤
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/你的用户名/ai-news-aggregator.git
+git clone https://github.com/[你的用户名]/ai-news-aggregator.git
 cd ai-news-aggregator
 ```
 
@@ -53,18 +53,31 @@ pip install -r requirements.txt
 
 ## 使用方法
 
-运行程序：
+1. 运行主程序：
 ```bash
-python news_aggregator.py
+python ai_news_app.py
 ```
 
-### 基本操作
+2. 在界面中选择需要的新闻源
+3. 点击"刷新"按钮获取最新新闻
+4. 点击新闻标题查看详细内容
 
-1. 切换新闻源：使用顶部下拉菜单选择不同的新闻源
-2. 刷新新闻：点击"刷新新闻"按钮
-3. 搜索过滤：在搜索框中输入关键词进行实时过滤
-4. 查看新闻：点击新闻链接在浏览器中打开
-5. 代理设置：点击"设置代理"按钮配置代理服务器
+## 代理设置
+
+如果需要访问Google新闻，可以在设置中配置代理：
+
+1. 点击"设置"按钮
+2. 输入代理服务器地址和端口
+3. 点击"保存"确认设置
+
+## 故障排除
+
+如果遇到问题：
+
+1. 检查 `news_aggregator.log` 文件中的错误信息
+2. 确保所有依赖都已正确安装
+3. 检查网络连接是否正常
+4. 如果使用代理，确保代理设置正确
 
 ## 开发
 
